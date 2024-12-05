@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/surah-insight/static/css/main.5b072349.css",
+    "main.js": "/surah-insight/static/js/main.752b8231.js",
+    "static/js/453.605a4820.chunk.js": "/surah-insight/static/js/453.605a4820.chunk.js",
+    "index.html": "/surah-insight/index.html",
+    "main.5b072349.css.map": "/surah-insight/static/css/main.5b072349.css.map",
+    "main.752b8231.js.map": "/surah-insight/static/js/main.752b8231.js.map",
+    "453.605a4820.chunk.js.map": "/surah-insight/static/js/453.605a4820.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b072349.css",
+    "static/js/main.752b8231.js"
+  ]
+}
