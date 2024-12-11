@@ -1,0 +1,52 @@
+/* App.css */
+/* .arabic-text {
+    font-family: 'Amiri', serif;
+    font-weight: bold;
+    width: 80vw;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+   */
+
+.noto-naskh-arabic-.arabic-text {
+  font-family: "Noto Naskh Arabic", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arabic-text{
+  font-size: 36px;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  text-align: right;
+  direction: rtl; /* Arabic text flows right-to-left */
+  text-align: justify; /* Optional for better alignment */
+}
+
+.verse-container {
+  display: flex;
+  align-items: baseline; /* Aligns number and text on the same line */
+  margin-bottom: 10px;
+}
+
+.verse-number {
+  font-size: 24px;
+  min-width: 50px; /* Adjust width as needed */
+  text-align: left;
+  margin-right: 10px; /* Adds spacing between number and text */
+  direction: ltr; /* Ensure the number flows left-to-right */
+  font-weight: bold;
+}
+
+.verse-text {
+  flex: 1; /* Takes up the remaining space */
+  direction: rtl; /* Ensures Arabic text flows properly */
+}
+
+
+@media (max-width: 600px) {
+  .arabic-text {
+    font-size: 24px;
+  }
+}

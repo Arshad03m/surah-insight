@@ -5,7 +5,7 @@ import surahData from "../data/surahData.json";
 export default function SurahList() {
 
   let mean = {
-    fontSize: "0.9em",
+    fontSize: "0.8em",
     color: "#7D977D"
   }
   let head = {
@@ -42,17 +42,21 @@ export default function SurahList() {
       <div className="surah-content-center">
         <div className="surah-content">
           {content ? (
-            // Check if the content has valid data for Surah
-            <SurahContent
-              name={content.SurahName}
-              translation={content.Translation}
-              number={content.ChapterNumber}
-              revelationPlace={content.RevelationPlace}
-              totalVerses={content.TotalVerses}
-              description={content.Description}
-              // keyThemes={Object.values(content.KeyThemes).flat()}
-              keyThemes={content.KeyThemes}
-            />
+            // send the entire data
+            <SurahContent surahData={content} />
+
+            // send the fixed key-values in the data
+            // <SurahContent 
+            //   name={content.SurahName}
+            //   translation={content.Translation}
+            //   number={content.ChapterNumber}
+            //   revelationPlace={content.RevelationPlace}
+            //   totalVerses={content.TotalVerses}
+            //   description={content.Description}
+            //   // keyThemes={Object.values(content.KeyThemes).flat()}
+            //   keyThemes={content.KeyThemes}
+            // />
+
           ) : content === null ? (
             // Show message when no Surah is selected
             <h1 style={head}>Select a Surah to display content</h1>
@@ -61,6 +65,7 @@ export default function SurahList() {
             <h1 style={head}>Will be updated soon!</h1>
           )}
         </div>
+
       </div>
 
 
