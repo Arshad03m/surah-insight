@@ -7,11 +7,14 @@ body {
 
 .navbar {
   background-color: #244435;
-  height: auto;
+  top: 0;
+  height: 8vh;
+  width: 100%;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: fixed;
 
 }
 
@@ -49,7 +52,7 @@ a {
   align-items: center;
 
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   top: 8vh;
 }
 
@@ -102,7 +105,7 @@ a {
 
 .surah-content {
   margin-top: 35vh;
-  padding: 20px;
+  padding-left: 20px;
   font-size: 20px;
   text-align: justify;
 }
@@ -148,7 +151,7 @@ a {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      z-index: 1500;
+      z-index: 2;
   }
 
   .main-title {
