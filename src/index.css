@@ -152,13 +152,16 @@ a {
   .navbar {
       background-color: #244435;
       height: 8vh;
-      display: flex;
+      width: 100%;
+      display: fl
+      ex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
       z-index: 2;
       top: 0;
       position: fixed;
+
   }
   .navbar.open{
     height: auto;
@@ -170,6 +173,13 @@ a {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      margin-top: 2px;
+
+  }
+  .nav-title h1{
+    font-size: 28px;
+    margin: 0;
   }
 
   .nav-links {
