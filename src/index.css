@@ -151,7 +151,7 @@ a {
 @media (max-width:600px) {
   .navbar {
       background-color: #244435;
-      height: auto;
+      height: 8vh;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -159,6 +159,9 @@ a {
       z-index: 2;
       top: 0;
       position: fixed;
+  }
+  .navbar.open{
+    height: auto;
   }
 
   .main-title {
@@ -180,6 +183,7 @@ a {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+
   }
 
 
